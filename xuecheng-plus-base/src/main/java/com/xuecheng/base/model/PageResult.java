@@ -1,19 +1,21 @@
 package com.xuecheng.base.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.List;
 
 /**
- * @author Mr.M
- * @version 1.0
- * @description 分页查询结果模型类
- * @date 2023/2/11 15:40
+ * 分页查询结果模型类
+ * @param <T>
  */
 @Data
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class PageResult<T> implements Serializable {
 
     // 数据列表
@@ -28,12 +30,6 @@ public class PageResult<T> implements Serializable {
     //每页记录数
     private long pageSize;
 
-    public PageResult(List<T> items, long counts, long page, long pageSize) {
-        this.items = items;
-        this.counts = counts;
-        this.page = page;
-        this.pageSize = pageSize;
-    }
 
 
 }

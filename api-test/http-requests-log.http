@@ -1,0 +1,58 @@
+POST http://{{content_host}}/content/course/list
+Content-Type: application/json
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "auditStatus": "202002",
+  "courseName": "1"
+}
+
+<> 2024-06-13T153357.200.json
+
+###
+
+POST http://localhost:63040/content/course/list
+Content-Type: application/json
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "auditStatus": "202002",
+  "courseName": "1",
+}
+
+<> 2024-06-13T153352.400.json
+
+###
+
+POST http://localhost:63040/content/course/list
+Content-Type: application/json
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2024-06-13T153319.200.json
+
+###
+
+POST http://localhost:63040/content/course/list
+Content-Type: application/json
+Content-Length: 2
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{}
+
+<> 2024-06-13T153307.200.json
+
+###
+
